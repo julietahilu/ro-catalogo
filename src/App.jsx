@@ -235,7 +235,7 @@ function ProductCard({product, session, onSelect}) {
           ))}
         </div>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-          <div>{session.role==="admin" && product.cost>0 && <span style={{fontSize:9,color:"#8B2020",fontFamily:"sans-serif",display:"block"}}>Costo: {fmt(product.cost)}</span>}<span style={{color:RO.brown,fontWeight:800,fontSize:13}}>{fmt(price)}</span></div>
+          <div>{session.role==="admin" && product.cost>0 && <span style={{fontSize:9,color:"#8B2020",fontFamily:"sans-serif",display:"block"}}>Costo: {fmt(product.cost)}</span>}<div style={{fontSize:10,fontFamily:"sans-serif"}}>{session.role==="admin"&&Object.entries({"lista1":"x1.3","lista2":"x1.4","lista3":"x1.5","lista4":"x1.6","lista5":"x2"}).map(([k,v])=><div key={k} style={{display:"flex",justifyContent:"space-between"}}><span style={{color:"#7A6355"}}>{v}</span><span style={{color:"#3D2B1F",fontWeight:700}}>{fmt(product.prices[k])}</span></div>)}</div></div>
           <span style={{fontSize:9,color:ts>0?RO.success:RO.danger,fontFamily:"sans-serif"}}>{ts>0?ts+"u":"—"}</span>
         </div>
       </div>
