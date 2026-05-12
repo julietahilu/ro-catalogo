@@ -8,8 +8,8 @@ const RO = {
 };
 
 const PRICE_LISTS = {
-  lista1:"Lista 1 - Distribuidor",lista2:"Lista 2 - Revendedor",
-  lista3:"Lista 3 - Especial",lista4:"Lista 4 - Minorista",lista5:"Lista 5 - Exportacion",
+  lista1:"Lista 1 · x1.3",lista2:"Lista 2 · x1.4",
+  lista3:"Lista 3 · x1.5",lista4:"Lista 4 · x1.6",lista5:"Lista 5 · x2",
 };
 
 const COLORMAP = {
