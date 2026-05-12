@@ -235,7 +235,7 @@ function ProductCard({product, session, onSelect}) {
           ))}
         </div>
         <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
-          <span style={{color:RO.brown,fontWeight:800,fontSize:13}}>{fmt(price)}</span>
+          <div>{session.role==="admin" && product.cost>0 && <span style={{fontSize:9,color:"#8B2020",fontFamily:"sans-serif",display:"block"}}>Costo: {fmt(product.cost)}</span>}<span style={{color:RO.brown,fontWeight:800,fontSize:13}}>{fmt(price)}</span></div>
           <span style={{fontSize:9,color:ts>0?RO.success:RO.danger,fontFamily:"sans-serif"}}>{ts>0?ts+"u":"—"}</span>
         </div>
       </div>
